@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, 'sans-serif';
+}
+
+body{
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+
+audio{
+    display: none;
+}
+
+.sounds{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sound{
+    width: 5em;
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 5px #000;
+    border-radius: 4px;
+    background-color: #eee;
+    color: #000;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 2em;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.sound.active{
+    box-shadow: 0px 15px 15px rgb(226, 216, 71);
+    transform:scale(1.15);
+}
