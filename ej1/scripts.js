@@ -31,7 +31,7 @@ const checkKey = function(e){
 }
 
 // Corro el listener
-document.addEventListener('keyup',checkKey);
+document.addEventListener('keydown',checkKey);
 
 
 
