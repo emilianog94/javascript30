@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Update CSS Variables with <span>JS</span></h1>
+
+    <div class="properties"> 
+        <div class="property">
+            <label for="spacing">Spacing:</label>
+            <input type="range" id="spacing" name="spacing" min="0" max="50" value="15" data-sufijo="px">
+        </div>
+
+        <div class="property">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="0" max="10" value="1" data-sufijo="px">
+        </div>
+
+        <div class="property">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#ffffff">
+        </div>
+    </div>
+
+    <div class="result">
+        <img src="img.jpg" alt="Image">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
