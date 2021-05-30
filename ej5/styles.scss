@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Arial',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.provincias{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-shadow: 1px 4px 2px #000000;
+
+    .provincia{
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all  .5s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+
+        p{
+            font-size: 1.5em;
+        }
+
+        &.active{
+            flex: 5;
+
+            .nombre{
+                transform:translateY(10em);
+            }
+
+            .date{
+                transform: translateY(-10em);
+            }
+            
+        }
+
+        .nombre{
+            transform: translateY(-10em);
+            transition: all  .5s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+        }
+
+        .date{
+            transform: translateY(10em);
+            transition: all  .5s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+        }
+
+        h3{
+            font-size: 2.5em;
+        }
+
+        &#buenos-aires{
+            background-image:url('img/obelisco-buenos-aires.jpg');
+        }
+
+        &#misiones{
+            background-image:url('img/cataratas-iguazu-misiones.jpg');
+        }
+
+        &#santa-fe{
+            background-image:url('img/monumento-bandera-rosario.jpg');
+        }
+
+        &#neuquen{
+            background-image:url('img/nahuel-huapi-neuquen.jpg');
+        }
+
+        &#santa-cruz{
+            background-image:url('img/perito-moreno-santa-cruz.jpg');
+        }
+        
+    }
+}

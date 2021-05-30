@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial',sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.provincias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-shadow: 1px 4px 2px #000000;
+}
+
+.provincias .provincia {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.provincias .provincia p {
+  font-size: 1.5em;
+}
+
+.provincias .provincia.active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.provincias .provincia.active .nombre {
+  -webkit-transform: translateY(10em);
+          transform: translateY(10em);
+}
+
+.provincias .provincia.active .date {
+  -webkit-transform: translateY(-10em);
+          transform: translateY(-10em);
+}
+
+.provincias .provincia .nombre {
+  -webkit-transform: translateY(-10em);
+          transform: translateY(-10em);
+  -webkit-transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.provincias .provincia .date {
+  -webkit-transform: translateY(10em);
+          transform: translateY(10em);
+  -webkit-transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.provincias .provincia h3 {
+  font-size: 2.5em;
+}
+
+.provincias .provincia#buenos-aires {
+  background-image: url("img/obelisco-buenos-aires.jpg");
+}
+
+.provincias .provincia#misiones {
+  background-image: url("img/cataratas-iguazu-misiones.jpg");
+}
+
+.provincias .provincia#santa-fe {
+  background-image: url("img/monumento-bandera-rosario.jpg");
+}
+
+.provincias .provincia#neuquen {
+  background-image: url("img/nahuel-huapi-neuquen.jpg");
+}
+
+.provincias .provincia#santa-cruz {
+  background-image: url("img/perito-moreno-santa-cruz.jpg");
+}
+/*# sourceMappingURL=styles.css.map */
