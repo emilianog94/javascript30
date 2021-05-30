@@ -13,3 +13,4 @@ Here are my solutions for this challenges
 - Challenge 2 - [Pure JS Clock](https://emilianog94.github.io/javascript30/ej2/index.html)
 - Challenge 3 - [CSS Variables Updater](https://emilianog94.github.io/javascript30/ej3/index.html)
 - Challenge 4 - [Array Methods](https://emilianog94.github.io/javascript30/ej4/index.html)
+- - Challenge 5 - [Animated Flex Panel Gallery](https://emilianog94.github.io/javascript30/ej5/index.html)
