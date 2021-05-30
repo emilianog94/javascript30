@@ -15,7 +15,7 @@ function changeClock(){
     let gradesMinutes = (dateMinutes / 60) * 360;
     agujaMinutos.style.transform = `rotate(${gradesMinutes}deg)`;
 
-    let gradesHours = (dateHours / 60) * 360;
+    let gradesHours = (dateHours / 12) * 360;
     agujaHoras.style.transform = `rotate(${gradesHours}deg)`;
 }
 
